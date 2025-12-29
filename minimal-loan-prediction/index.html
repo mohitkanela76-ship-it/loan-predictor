@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Prediction - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    /* New Base Style */
+    body { font-family: 'Inter', sans-serif; margin:0; padding:0; background:#e0f2fe; /* Light Blue Background */ }
+    nav { background:white; padding:1rem 2rem; display:flex; align-items:center; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    nav a { margin-right:2rem; text-decoration:none; color:#1f2937; font-weight:600; transition:color 0.2s; cursor: pointer;}
+    nav a:hover { color:#5b21b6;}
+    
+    /* Home Section Design */
+    .home-section { 
+        display:flex; 
+        justify-content:space-between; 
+        align-items:center; 
+        padding:6rem 4rem; 
+        background:#fff; 
+        box-shadow:0 5px 15px rgba(0,0,0,0.05);
+        margin: 2rem;
+        border-radius: 12px;
+    }
+    .home-section .text { max-width:600px; }
+    .home-section h1 { font-size:3rem; margin-bottom:1rem; color:#1e3a8a; }
+    .home-section h1 span { color:#5b21b6; }
+    .home-section p { color:#4b5563; margin-bottom:2.5rem; font-size:1.1rem;}
+    .home-section button { 
+        background:#5b21b6; 
+        color:#fff; 
+        border:none; 
+        padding:0.75rem 2rem; 
+        font-size:1.1rem; 
+        cursor:pointer; 
+        border-radius:8px;
+        transition: background-color 0.2s;
+    }
+    .home-section button:hover { background-color: #4c1d95; }
+
+    .home-section img { max-width:500px; height: auto; border-radius: 8px;}
+    
+    /* Responsive adjustment */
+    @media (max-width: 1024px) {
+        .home-section { flex-direction: column; padding: 4rem 2rem; }
+        .home-section img { margin-top: 2rem; max-width: 100%; }
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="prediction.html">Prediction</a>
+</nav>
+
+<main>
+    <section class="home-section">
+        <div class="text">
+            <h1>Loan Prediction <span>Machine Learning</span></h1>
+            <p>Welcome to our Loan Approval Prediction Website! We use a trained machine learning model to simplify loan applications by providing instant approval predictions based on applicant data.</p>
+            <button onclick="window.location.href='prediction.html'">Go to Prediction Form</button>
+        </div>
+        
+        <img src="img.png" alt="Illustration showing the process of a machine learning model predicting loan approval."> 
+    </section>
+</main>
+
+</body>
+</html>
